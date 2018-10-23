@@ -7,3 +7,9 @@ spec:
     command:
     - cat
     tty: true
+  - name: node-10-container
+    image: node:10-alpine
+    command:
+    - cat
+    tty: true
+    
