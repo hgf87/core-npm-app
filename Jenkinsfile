@@ -7,6 +7,13 @@ pipeline {
     }
   }
   stages {
+    stage('Build Node 10') {
+      steps {
+        container('node-10-container') {
+          sh 'npm install'
+        }
+      }
+    }
     stage('Build') {
       steps {
         sh 'npm install'
